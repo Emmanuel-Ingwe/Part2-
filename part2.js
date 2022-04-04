@@ -16,7 +16,11 @@ class Timer {
     }
 
     start() {
-        console.log('TIme To start Timer');
+        this.importantMethodToCall();
+    }
+
+    importantMethodToCall() {
+        console.log('importaNT THINGGG');
     }
 }
 
@@ -25,3 +29,4 @@ const startButton = document.querySelector('#start');
 const pauseButton = document.querySelector('#pause');
 
 const timer = new Timer(durationInput, startButton, pauseButton);
+timer.start(); 
