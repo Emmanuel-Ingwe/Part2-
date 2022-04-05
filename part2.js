@@ -42,3 +42,14 @@ const timer = new Timer(durationInput, startButton, pauseButton);
 // };
 
 // printThis.call({ godspowergoat: '=cow' });
+
+const colors = {
+    printColor() {
+        console.log(this);
+    }
+};
+const randomObject = {
+    a: 1
+};
+randomObject.printColor = colors.printColor;
+randomObject.printColor();
