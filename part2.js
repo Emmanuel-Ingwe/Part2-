@@ -53,3 +53,16 @@ const randomObject = {
 };
 randomObject.printColor = colors.printColor;
 randomObject.printColor();
+
+start = () => {
+    this.tick();
+    this.timer = setInterval(this.tick, 1000);
+};
+
+pause = () => {
+    clearInterval(this.interval);
+};
+
+tick = () => {
+    console.log('tick');
+};
