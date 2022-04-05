@@ -29,4 +29,10 @@ const startButton = document.querySelector('#start');
 const pauseButton = document.querySelector('#pause');
 
 const timer = new Timer(durationInput, startButton, pauseButton);
-timer.start(); 
+// timer.start(); 
+
+// console.log(this);
+// const printThis = () => {
+//     console.log(this);
+// };
+// printThis();
