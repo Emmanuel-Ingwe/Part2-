@@ -36,3 +36,9 @@ const timer = new Timer(durationInput, startButton, pauseButton);
 //     console.log(this);
 // };
 // printThis();
+
+// const printThis = function () {
+//     console.log(this);
+// };
+
+// printThis.call({ godspowergoat: '=cow' });
