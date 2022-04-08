@@ -41,7 +41,7 @@ const timer = new Timer(durationInput, startButton, pauseButton);
 //     console.log(this);
 // };
 
-// printThis.call({ godspowergoat: '=cow' });
+// printThis.call({ godspowergoat:; '=cow' });
 
 const colors = {
     printColor() {
