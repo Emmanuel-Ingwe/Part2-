@@ -62,9 +62,14 @@ start = () => {
 pause = () => {
     clearInterval(this.interval);
 };
-0;
 
 
 tick = () => {
-    console.log('tick');
+    const timeRemaining = parseFloat(this.duration.value);
+    this.durationinput.value = timeRemaining - 1;
 };
+
+const durationInput = document.querySelector('#duration');
+const startButton = document.querySelector('#start');
+const pauseButton = document.querySelector('#pause');
+
