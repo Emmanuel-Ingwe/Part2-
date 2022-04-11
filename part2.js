@@ -41,7 +41,7 @@ const timer = new Timer(durationInput, startButton, pauseButton);
 //     console.log(this);
 // };
 
-/// printThis.call({ godspowergoat:; '=cow' });
+// printThis.call({ godspowergoat: '=cow' });
 
 const colors = {
     printColor() {
@@ -63,13 +63,6 @@ pause = () => {
     clearInterval(this.interval);
 };
 
-
 tick = () => {
-    const timeRemaining = parseFloat(this.duration.value);
-    this.durationinput.value = timeRemaining - 1;
+    console.log('tick');
 };
-
-const durationInput = document.querySelector('#duration');
-const startButton = document.querySelector('#start');
-const pauseButton = document.querySelector('#pause');
-
