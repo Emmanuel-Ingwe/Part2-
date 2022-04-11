@@ -15,33 +15,25 @@ class Timer {
         this.startButton.addEventListener('click', this.start);
     }
 
-    start() {
-        this.importantMethodToCall();
-    }
+    start = () => {
+        this.tick();
+        const timer = setInterval(this.tick, 1000);
+        clearInterval(timer);
+    };
 
-    importantMethodToCall() {
-        console.log('importaNT THINGGG');
-    }
+    pause = () => {
+        clearInterval(this.interval);
+    };
+
+    tick = () => {
+        console.log('tick');
+    };
 }
 
 const durationInput = document.querySelector('#duration');
 const startButton = document.querySelector('#start');
 const pauseButton = document.querySelector('#pause');
-
 const timer = new Timer(durationInput, startButton, pauseButton);
-// timer.start(); 
-
-// console.log(this);
-// const printThis = () => {
-//     console.log(this);
-// };
-// printThis();
-
-// const printThis = function () {
-//     console.log(this);
-// };
-
-// printThis.call({ godspowergoat: '=cow' });
 
 const colors = {
     printColor() {
@@ -59,9 +51,6 @@ start = () => {
     this.timer = setInterval(this.tick, 1000);
 };
 
-pause = () => {
-    clearInterval(this.interval);
-};
 
 tick = () => {
     console.log('tick');
