@@ -1,0 +1,16 @@
+.timer {
+	position: absolute;
+	display: block;
+	border: none;
+	width: 240px;
+	font-size: 90px;
+	text-align: center;
+	top: 150px;
+	left: 81px;
+}
+
+.btn {
+	position: absolute;
+	font-size: 20px;
+	top: 240px;
+}
